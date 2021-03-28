@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.login__page {
+  width: 100%;
+  height: 100vh;
+  background-color: #e9ebee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__inner {
+  padding: 50px 150px 20px;
+  text-align: center;
+}
+
+.login__inner {
+  background-color: white;
+}
+
+.login__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__avatar {
+  padding-bottom: 10px;
+}
+
+.info__avatar img {
+  display: block;
+  max-width: 70px;
+}
+
+.info__name {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.info__email {
+  color: #acabbb;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.info__email a {
+  text-decoration: none;
+  color: #4267b2;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.form__input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form__input-container i {
+  color: #be4b49;
+  position: absolute;
+  right: 7px;
+  top: 6px;
+}
+
+.form__alert {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 12px;
+  top: -2px;
+  left: 260px;
+  padding: 5px;
+  background-color: #be4b49;
+  border-radius: 2px;
+  color: white;
+}
+.form__alert a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.form__alert::after {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  border-right: 7px solid #be4b49;
+  left: -14px;
+}
+
+.form__input {
+  width: 250px;
+  padding: 5px;
+  padding-right: 25px;
+  border: 0;
+  border-radius: 2px;
+  border-right: 0;
+  border: 1.5px solid #be4b49;
+}
+.form__input:hover {
+  border: 1.5px solid #be4b49;
+}
+.form__input:focus {
+  outline: none;
+}
+
+.form__submitbtn {
+  width: 250px;
+  margin-bottom: 10px;
+  background-color: #4267b2;
+  border: 1px solid #4267b2;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.form__resetbtn {
+  width: 250px;
+  background-color: #e9ebee;
+  border: 1px solid #e1e2e4;
+  outline: 0;
+  padding: 3px 0;
+}
+
+.form__reggister {
+  text-decoration: none;
+  font-size: 12px;
+  color: #4267b2;
+}

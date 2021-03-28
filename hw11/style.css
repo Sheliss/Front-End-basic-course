@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(moroccan-flower-dark.png);
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-music::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-dice::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-cat::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-dog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-fish::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-frog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.icon-heart::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+}
+
+.someblock {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+}
+
+.icon__test, .for__test {
+  display: flex;
+  padding: 20px;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.for__test .some4, .for__test .some3, .for__test .some2, .for__test .some1 {
+  border: 2px solid white;
+}
+.for__test .some1 {
+  width: 20px;
+  height: 20px;
+}
+.for__test .some2 {
+  width: 40px;
+  height: 40px;
+}
+.for__test .some3 {
+  width: 60px;
+  height: 60px;
+}
+.for__test .some4 {
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+}

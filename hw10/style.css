@@ -1,0 +1,122 @@
+body {
+    min-height: 100vh;
+    background-image: url(moroccan-flower-dark.png);
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 200px;
+}
+
+
+.header__inner {
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+
+
+
+.header__nav li {
+    padding: 5px 10px;
+    border: 2px solid white;
+    margin-right: 4px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background .1s linear;
+}
+
+.header__nav li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header__nav li:last-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header__inner {
+        justify-content: center;
+    }
+
+    .header__nav ul {
+        flex-direction: column;
+    }
+
+    .header__nav li {
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        height: 50px;
+    }
+
+    .header__inner {
+        justify-content: flex-end;
+    }
+
+    .header__nav::after {
+        position: absolute;
+        content: '';
+        left: -40px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        transform: rotate(45deg);
+        cursor: pointer;
+        transition: transform .1s linear;
+    }
+
+    .header__nav ul {
+        display: none;
+        position: relative;
+    }
+
+    .header__nav ul::before {
+        position: absolute;
+        content: '';
+        width: 65px;
+        height: 25px;
+        top: -25px;
+    }
+
+    .header__nav:hover::after {
+        transform: rotate(135deg);
+    }
+
+    .header__nav:hover ul {
+        position: absolute;
+        display: flex;
+        left: -80px;
+        top: 50px;
+    }
+
+
+}
